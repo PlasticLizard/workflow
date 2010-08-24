@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{workflow}
-  s.version = "0.6.0"
+  s.version = "0.6.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Vladimir Dobriakov"]
@@ -36,6 +36,7 @@ Gem::Specification.new do |s|
      "test/readme_example.rb",
      "test/test_helper.rb",
      "test/without_active_record_test.rb",
+     "workflow.gemspec",
      "workflow.rb"
   ]
   s.homepage = %q{http://www.geekq.net/workflow/}
