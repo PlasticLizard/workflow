@@ -109,10 +109,10 @@ module Workflow
 
     def workflow(&specification)
       @workflow_spec = Specification.new(Hash.new, &specification)
-      define_methods(@workflow_spec)
+      define_state_machine_methods(@workflow_spec)
     end
 
-    def define_methods(specification)
+    def define_state_machine_methods(specification)
       specification.states.values.each do |state|
         state_name = state.name
         module_eval do
